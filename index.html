@@ -29,7 +29,7 @@ footer{text-align:center;padding:35px 15px;background:#382b20;color:#f7e9c9}foot
 </header>
 <main>
 <section class="hero" id="home">
- <div><div class="eyebrow">✦ أناقتك تبدأ من هنا ✦</div><h1>دلع الهوانم<br>لأنكِ تستحقين التميّز</h1><p>اختاري إطلالتك المفضلة من الملابس والإكسسوارات والحقائب، أضيفيها للسلة، وكمّلي طلبك بسهولة عبر واتساب.</p><a class="btn" href="#shop">اكتشفي المجموعة　↙</a></div>
+ <div><div class="eyebrow">✦ أناقتك تبدأ من هنا ✦</div><h1>دلع الهوانم<br>لأنكِ تستحقين التميّز</h1><p>اختاري إطلالتك المفضلة من الملابس والإكسسوارات والحقائب، أضيفيها للسلة، وكمّلي طلبك بسهولة عبر واتساب.</p><a class="btn" href="#shop">اكتشفي المجموعة ↙</a></div>
  <div class="hero-art"><div class="orb"></div><img src="logo.jpg" alt="شعار دلع الهوانم"></div>
 </section>
 <section id="shop"><div class="section-head"><h2>تسوّقي مجموعتنا</h2><p>اختاري القطع اللي شبهك — وكل الأسعار بالجنيه المصري</p></div>
@@ -37,7 +37,7 @@ footer{text-align:center;padding:35px 15px;background:#382b20;color:#f7e9c9}foot
  <div class="products" id="products"></div>
 </section>
 <section id="steps"><div class="section-head"><h2>الطلب في 3 خطوات</h2><p>تجربة سهلة من أول اختيار لحد تأكيد الطلب</p></div><div class="steps"><div class="step"><b>١</b><h3>اختاري منتجاتك</h3><p>تصفحي الصور والأسعار وضيفي اللي يعجبك للسلة.</p></div><div class="step"><b>٢</b><h3>راجعي طلبك</h3><p>تأكدي من المنتجات والكميات واكتبي بيانات التواصل.</p></div><div class="step"><b>٣</b><h3>تأكيد على واتساب</h3><p>اضغطي إرسال الطلب وسيتم فتح واتساب برسالة جاهزة.</p></div></div></section>
-<section id="cart"><div class="section-head"><h2>سلة مشترياتك</h2><p>راجعي طلبك قبل إرساله</p></div><div class="cart"><div id="cartItems"><div class="empty">لسه ما ضفتيش منتجات للسلة 💛</div></div><div class="total"><span>الإجمالي</span><span id="total">0 ج.م</span></div><div class="checkout-grid"><input id="customerName" placeholder="اسمك بالكامل"><input id="customerPhone" placeholder="رقم موبايلك"><input id="customerAddress" placeholder="العنوان / المنطقة"><input id="customerNotes" placeholder="ملاحظات (اختياري)"></div><button onclick="checkout()" style="width:100%">تأكيد الطلب عبر واتساب　➜</button><p class="hint">تنبيه: الطلب لا يُعتبر مؤكداً إلا بعد التواصل مع المتجر على واتساب والاتفاق على الشحن والدفع.</p></div></section>
+<section id="cart"><div class="section-head"><h2>سلة مشترياتك</h2><p>راجعي طلبك قبل إرساله</p></div><div class="cart"><div id="cartItems"><div class="empty">لسه ما ضفتيش منتجات للسلة 💛</div></div><div class="total"><span>الإجمالي</span><span id="total">0 ج.م</span></div><div class="checkout-grid"><input id="customerName" placeholder="اسمك بالكامل"><input id="customerPhone" placeholder="رقم موبايلك"><input id="customerAddress" placeholder="العنوان / المنطقة"><input id="customerNotes" placeholder="ملاحظات (اختياري)"></div><button onclick="checkout()" style="width:100%">تأكيد الطلب عبر واتساب ➜</button><p class="hint">تنبيه: الطلب لا يُعتبر مؤكداً إلا بعد التواصل مع المتجر على واتساب والاتفاق على الشحن والدفع.</p></div></section>
 <section id="admin" class="admin-panel"><div class="section-head"><h2>لوحة إدارة المتجر</h2><p>إضافة المنتجات وتعديلها وحذفها من نفس الجهاز والمتصفح</p></div>
  <div class="admin-grid"><input id="pName" placeholder="اسم المنتج"><input id="pPrice" type="number" min="0" placeholder="السعر بالجنيه"><select id="pCategory"><option>ملابس</option><option>إكسسوارات</option><option>حقائب</option><option>ميكاب</option><option>أخرى</option></select><input id="pDesc" placeholder="وصف مختصر"><label>صورة المنتج <input id="pImage" type="file" accept="image/*"></label></div>
  <p><button onclick="saveProduct()">حفظ المنتج</button> <button onclick="cancelEdit()" style="background:#8d7964">إلغاء التعديل</button></p><div id="adminProducts"></div>
@@ -46,8 +46,8 @@ footer{text-align:center;padding:35px 15px;background:#382b20;color:#f7e9c9}foot
 </main>
 <footer><h2>دلع الهوانم</h2><p>الملابس • الحريمي • الإكسسوارات • الميكاب</p><small>أناقتك حكاية تستاهل تتقال ✨</small><p><button onclick="window.scrollTo({top:0,behavior:'smooth'})">العودة للأعلى ↑</button></p></footer>
 <script>
-const WHATSAPP_NUMBER="201000000000"; // غيّريه لرقم واتساب المتجر: كود مصر 20 ثم الرقم بدون الصفر الأول
-const ADMIN_PIN="1234"; // غيّري الرقم السري قبل استخدام المتجر
+const WHATSAPP_NUMBER="201102284775"; // تم تحديث الرقم بالرقم الجديد المطلوب
+const ADMIN_PIN="1234"; // الرقم السري لوحة الإدارة
 const starter=[
  {id:1,name:"منتج تجريبي — عدّليه",price:250,category:"ملابس",desc:"مثال للتوضيح، احذفيه وضيفي منتجاتك.",image:"",demo:true}
 ];
